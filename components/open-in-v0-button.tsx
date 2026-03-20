@@ -1,12 +1,12 @@
-import { Button } from "@/registry/new-york/ui/button"
+import { RegistryButton } from "@/registry/new-york/ui/registry-button"
 import { cn } from "@/lib/utils"
 
 export function OpenInV0Button({
   name,
   className,
-}: { name: string } & React.ComponentProps<typeof Button>) {
+}: { name: string } & React.ComponentProps<typeof RegistryButton>) {
   return (
-    <Button
+    <RegistryButton
       aria-label="Open in v0"
       size="sm"
       className={cn(
@@ -37,6 +37,6 @@ export function OpenInV0Button({
           ></path>
         </svg>
       </a>
-    </Button>
+    </RegistryButton>
   )
 }

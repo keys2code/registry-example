@@ -11,7 +11,7 @@ import {
 } from "@/registry/new-york/ui/card"
 import { Input } from "@/registry/new-york/ui/input"
 import { Label } from "@/registry/new-york/ui/label"
-import { Button } from "@/registry/new-york/ui/button"
+import { RegistryButton } from "@/registry/new-york/ui/registry-button"
 import { Textarea } from "@/registry/new-york/ui/textarea"
 import { z } from "zod"
 
@@ -154,9 +154,9 @@ export function ExampleForm() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button type="submit" size="sm" disabled={pending}>
+          <RegistryButton type="submit" size="sm" disabled={pending}>
             {pending ? "Sending..." : "Send Message"}
-          </Button>
+          </RegistryButton>
         </CardFooter>
       </Card>
     </form>
